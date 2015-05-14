@@ -23,14 +23,20 @@ class Site extends CI_Controller {
     public function login_or_create()
     {
         $this->load->view('view_header');
+        $this->load->view('view_nav_homepage');
+        $this->load->view('view_login_create');
+        $this->load->view('view_footer');
     }
 
     public function user_profile()
     {
         $this->load->view('view_header');
+        $this->load->view('view_nav_homepage');
+        $this->load->view('view_user_profile');
+        $this->load->view('view_footer');
     }
 /*
-    public function comunity_posts()
+    public function community_posts()
     {
         $this->load->view('');
     }

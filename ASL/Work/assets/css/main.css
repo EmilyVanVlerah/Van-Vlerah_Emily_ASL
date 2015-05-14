@@ -1,0 +1,91 @@
+/**
+ * Name: Emily Van Vlerah
+ * Assignment: Week 2 - Project Version 1 (Minimum 2 Features)
+ * Date: May 13th, 2015
+ */
+
+body{
+    background-color: #FFE5BF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1, h2, p{
+    color: #333333;
+}
+h1{
+    font-size: 20pt;
+}
+h2{
+    font-size: 18pt;
+}
+p{
+    font-size: 13pt;
+}
+#container {
+    width: 930px;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+}
+#header{
+    background: #63A900;
+    width: 930px;
+    height: 125px;
+    margin: 0 auto;
+    padding: 10px;
+}
+#header img{
+    height: 100px;
+    width: 150px;
+    padding: 10px;
+}
+#body-container{
+    background: #F4EEE5;
+    width: 930px;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+}
+#content{
+    margin: 0 auto;
+    padding: 10px;
+}
+#footer{
+    text-align: center;
+    background: #63A900;
+    width: 930px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/*----------------------------------*/
+
+input[type="text"]{
+    width: 120px;
+    border: 1px solid #ED745E;
+    padding: 2px;}
+input[type="text"]:hover{
+    background-color: #F2E6BB;
+    border: 1px solid #8B876F;}
+input[type="text"]:focus{
+    background-color: #F2E6BB;
+    border: 1px solid #8B876F;}
+input[type="password"]{
+    width: 120px;
+    border: 1px solid #ED745E;
+    padding: 2px;}
+input[type="password"]:hover{
+    background-color: #F2E6BB;
+    border: 1px solid #8B876F;}
+input[type="password"]:focus{
+    background-color: #F2E6BB;
+    border: 1px solid #8B876F;}
+input[type="submit"] {
+    align: center;
+    border: 1px solid #ED745E;
+    background-color: #DD4225;
+    width: 200px;
+    color: #202724;
+    padding: 5px;
+    margin: 10px 50px 10px 10px }
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #AE4609;}

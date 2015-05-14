@@ -1,8 +1,7 @@
 <!--
- * Created by PhpStorm.
- * User: emilyvanvlerah
- * Date: 5/13/15
- * Time: 5:56 PM
+ * Name: Emily Van Vlerah
+ * Assignment: Week 2 - Project Version 1 (Minimum 2 Features)
+ * Date: May 13th, 2015
 -->
 
 <body>
@@ -11,26 +10,26 @@
 
         <div id="header">
 
-                <div id="tabs">
-                    <ul>
-                        <li><a href="#tabs-1">Past Hacks</a> </li>
-                        <li><a href="#tabs-2">Community</a></li>
-                        <li><a href="#tabs-3">User Content</a></li>
-                        <li><a href="#tabs-4">Site Help</a></li>
-                    </ul>
-                    <div id="tabs-3">
+            <a href='http://localhost:8888/Work/index.php/site'><img src="../assets/img/logo.png" alt="Hackin' Life Logo"></a>
+
+            <div id='cssmenu'>
+                <ul>
+                    <li><a href='#'><span>Past Hacks</span></a></li>
+                    <li><a href='#'><span>Community</span></a></li>
+                    <li class='active has-sub'><a href='#'><span>User Content</span></a>
                         <ul>
-                            <li><a href="#">Log In</a> </li>
-                            <li><a href="#">Register</a> </li>
-                            <li><a href="#">Account</a> </li>
+                            <li class='has-sub'><a href='http://localhost:8888/Work/index.php/site/login_or_create'><span>Log In</span></a></li>
+                            <li class='has-sub'><a href='http://localhost:8888/Work/index.php/site/login_or_create'><span>Register</span></a></li>
+                            <li class='has-sub'><a href='http://localhost:8888/Work/index.php/site/user_profile'><span>Profile</span></a></li>
                         </ul>
-                    </div>
-                    <div id="tabs-4">
+                    </li>
+                    <li class='active has-sub'><a href='#'><span>User Content</span></a>
                         <ul>
-                            <li><a href="#">About Us</a> </li>
-                            <li><a href="#">Contact Us</a> </li>
+                            <li class='has-sub'><a href='#'><span>About Us</span></a></li>
+                            <li class='has-sub'><a href='#'><span>Contact Us</span></a></li>
                         </ul>
-                    </div>
-                </div>
+                    </li>
+                </ul>
+            </div>
 
         </div>
