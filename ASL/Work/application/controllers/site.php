@@ -14,17 +14,20 @@ class Site extends CI_Controller {
 
     public function homepage()
     {
-        $this->load->view('');
+        $this->load->view('view_header');
+        $this->load->view('view_nav_homepage');
+        $this->load->view('view_body_homepage');
+        $this->load->view('view_footer');
     }
 
     public function login_or_create()
     {
-        $this->load->view('');
+        $this->load->view('view_header');
     }
 
     public function user_profile()
     {
-        $this->load->view('');
+        $this->load->view('view_header');
     }
 /*
     public function comunity_posts()
