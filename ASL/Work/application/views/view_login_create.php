@@ -16,6 +16,9 @@
 
             <br/>
             <br/>
+            <hr/>
+            <br/>
+            <br/>
 
             <h1>Register:</h1>
             <form action="newuser.php" method="post">

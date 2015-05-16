@@ -58,34 +58,82 @@ p{
 
 /*----------------------------------*/
 
+#button #follow{
+    padding-left: 10px;
+}
+
+#button #share{
+    width: 150px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+
+/*----------------------------------*/
+
 input[type="text"]{
     width: 120px;
-    border: 1px solid #ED745E;
+    border: 1px solid #63A900;
     padding: 2px;}
 input[type="text"]:hover{
-    background-color: #F2E6BB;
-    border: 1px solid #8B876F;}
+    background-color: #FFFFFF;
+    border: 1px solid #666464;}
 input[type="text"]:focus{
-    background-color: #F2E6BB;
-    border: 1px solid #8B876F;}
+    background-color: #FFFFFF;;
+    border: 1px solid #666464;}
 input[type="password"]{
     width: 120px;
-    border: 1px solid #ED745E;
+    border: 1px solid #63A900;
     padding: 2px;}
 input[type="password"]:hover{
-    background-color: #F2E6BB;
-    border: 1px solid #8B876F;}
+    background-color: #FFFFFF;;
+    border: 1px solid #666464;}
 input[type="password"]:focus{
-    background-color: #F2E6BB;
-    border: 1px solid #8B876F;}
+    background-color: #FFFFFF;;
+    border: 1px solid #666464;}
+
+input[type="login"] {
+    align: center;
+    font-size: 10pt;
+    border: 1px solid #EAAD59;
+    background-color: #DA8F23;
+    width: 120px;
+    color: #333333;
+    padding: 5px;
+    margin: 10px 50px 10px 10px }
+input[type="login"]:hover {
+    cursor: pointer;
+    background-color: #c88503;}
+
 input[type="submit"] {
     align: center;
-    border: 1px solid #ED745E;
-    background-color: #DD4225;
-    width: 200px;
-    color: #202724;
+    font-size: 10pt;
+    border: 1px solid #EAAD59;
+    background-color: #DA8F23;
+    width: 120px;
+    color: #333333;
     padding: 5px;
     margin: 10px 50px 10px 10px }
 input[type="submit"]:hover {
     cursor: pointer;
-    background-color: #AE4609;}
+    background-color: #c88503;}
+
+/*--------------------------------------*/
+
+#posts{
+    margin: 50px;
+    padding: 10px;
+}
+
+input[type="edit"] {
+    text-align: center;
+    font-size: 10pt;
+    border: 1px solid #EAAD59;
+    background-color: #DA8F23;
+    width: 80px;
+    color: #333333;
+    padding: 5px;
+    margin: 10px 50px 10px 10px }
+input[type="edit"]:hover {
+    cursor: pointer;
+    background-color: #c88503;}

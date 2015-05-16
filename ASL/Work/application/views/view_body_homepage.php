@@ -15,6 +15,12 @@
             Usu ne saepe causae, cu eum liber quando regione, molestie mnesarchum conclusionemque pri eu. Eam ut dolore labitur mentitum, quo nisl accusam dolores cu. In adhuc putent vim. Per at voluptua epicurei. Eam movet patrioque at, mei eros aeque ex. Vocibus consequat has no, ei doming definitiones pri.</p>
 
         <br/>
+        <div id="button">
+            <img id="fav" src="../assets/img/fav1.png" alt="fav button">
+            <img id="follow" src="../assets/img/follow1.png" alt="follow button">
+            <img id="share" src="../assets/img/share1.png" alt="facebook button">
+        </div>
+
         <br/>
     </div>
 </div>
