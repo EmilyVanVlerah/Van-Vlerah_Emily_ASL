@@ -6,6 +6,8 @@
 
 ( function( $ ) {
     $( document ).ready(function() {
+
+       /*------------- Menu Functionality --------------------*/
         $('#cssmenu').prepend('<div id="indicatorContainer"><div id="pIndicator"><div id="cIndicator"></div></div></div>');
         var activeElement = $('#cssmenu>ul>li:first');
 
@@ -52,5 +54,10 @@
                 $(this).parent().addClass('open');
             }
         });
+
+        /*------------- Button Functionality --------------------*/
+
+
+
     });
 } )( jQuery );

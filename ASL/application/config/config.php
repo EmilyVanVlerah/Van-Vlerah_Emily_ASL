@@ -16,7 +16,7 @@
 | environments.
 |
 */
-$config['base_url'] = '';
+$config['base_url'] = 'http://localhost:8888/ASL/';
 
 /*
 |--------------------------------------------------------------------------
@@ -28,7 +28,7 @@ $config['base_url'] = '';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -226,7 +226,7 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = '7w4YkwE9th8i4EcZ78hH8e1b1N6650B3';
 
 /*
 |--------------------------------------------------------------------------
