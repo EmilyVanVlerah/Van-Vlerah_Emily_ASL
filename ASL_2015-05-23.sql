@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.5.42)
 # Database: ASL
-# Generation Time: 2015-05-23 07:58:20 +0000
+# Generation Time: 2015-05-23 08:12:59 +0000
 # ************************************************************
 
 
@@ -40,7 +40,8 @@ LOCK TABLES `entries` WRITE;
 
 INSERT INTO `entries` (`entry_id`, `author`, `date`, `title`, `body`)
 VALUES
-	(1,'Emily','May 22nd, 2015','Oil Stain Hack ','Use coca cola for oil stains on cement or pavement.');
+	(1,'Emily','May 22nd, 2015','Oil Stain Hack ','Use coca cola for oil stains on cement or pavement.'),
+	(2,'Emily','May 23rd, 2015','Bottle Caps Hack','Cut the caps off two pop bottles right where the neck starts for the bottle and sand the cut edges down. Sand an old credit card or a hotel key and then trace the cap shape. Cut the shape out. Either use apoxy or hot glue and combine the two bottle caps and the card piece. Now you have a portable pill holder or container to keep two things separate.');
 
 /*!40000 ALTER TABLE `entries` ENABLE KEYS */;
 UNLOCK TABLES;

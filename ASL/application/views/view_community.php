@@ -48,35 +48,34 @@
 
         <div id="content">
             <div id="posts">
-                <?php foreach($query->result() as $row): ?>
+
 
                     <?=form_open('index.php/site/all_hacks/hack_insert');?>
 
                     <?=form_hidden('entry_id', $this->uri->segment(3));?>
 
-                <p>Title: <input type="text" name="Title"/></p>
-                <p>Content:</p>
-                <p><textarea name="body" rows="10" cols="50"></textarea></p>
-                <p>Author: <input type="text" name="Author"/></p>
-                <p>Date: <input type="text" id="datepicker" name="Date"/></p>
-                <p><input type="submit" value="Submit Hack" /></p>
+                        <p>Title: <input type="text" name="Title"/></p>
+                        <p>Content:</p>
+                        <p><textarea name="body" rows="10" cols="50"></textarea></p>
+                        <p>Author: <input type="text" name="Author"/></p>
+                        <p>Date: <input type="text" id="datepicker" name="Date"/></p>
+                        <p><input type="submit" value="Submit Hack" /></p>
 
-                </form>
+                        </form>
             </div>
-                <br>
-                <hr>
-                <br>
-            <div id="posts">
-                <h2>All Hacks</h2>
+                    <br>
+                    <hr>
+                    <br>
+                <?php foreach($query->result() as $row): ?>
+                    <h2>All Hacks</h2>
 
-                <h3><?=$row->title?></h3>
-                <p><?=$row->body?></p>
-                <h5><?=$row->author?></h5>
-                <h6><?=$row->date?></h6>
-            </div>
-                <hr>
+                    <h3><?=$row->title?></h3>
+                    <p><?=$row->body?></p>
+                    <h5><?=$row->author?></h5>
+                    <h6><?=$row->date?></h6>
+                    <hr>
 
-            <?php endforeach; ?>
+                <?php endforeach; ?>
 
                 <br/>
 
