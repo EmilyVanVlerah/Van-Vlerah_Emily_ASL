@@ -1,13 +1,13 @@
 <!--
  * Name: Emily Van Vlerah
- * Assignment: Week 2 - Project Version 1 (Minimum 2 Features)
- * Date: May 13th, 2015
+ * Assignment: Week 3 - Project Version 1 (Minimum 2 Features)
+ * Date: May 18th, 2015
 -->
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Hackin' Life - Login/Create</title>
+    <title>Hackin' Life - Register</title>
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/main.css"/>
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/styles.css"/>
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/jquery-ui.min.css"/>
@@ -25,8 +25,7 @@
 
         <div id='cssmenu'>
             <ul>
-                <li><a href='#'><span>Past Hacks</span></a></li>
-                <li><a href='#'><span>Community</span></a></li>
+                <li class='has-sub'><a href='<?php echo base_url(); ?>index.php/site/all_hacks'><span>All Hacks</span></a></li>
                 <li class='active has-sub'><a href='#'><span>User Content</span></a>
                     <ul>
                         <li class='has-sub'><a href='<?php echo base_url(); ?>index.php/site/login'><span>Log In</span></a></li>
@@ -36,8 +35,8 @@
                 </li>
                 <li class='active has-sub'><a href='#'><span>User Content</span></a>
                     <ul>
-                        <li class='has-sub'><a href='#'><span>About Us</span></a></li>
-                        <li class='has-sub'><a href='#'><span>Contact Us</span></a></li>
+                        <li class='has-sub'><a href='<?php echo base_url(); ?>index.php/site/about_us'><span>About Us</span></a></li>
+                        <li class='has-sub'><a href='<?php echo base_url(); ?>index.php/site/contact_us'><span>Contact Us</span></a></li>
                     </ul>
                 </li>
             </ul>

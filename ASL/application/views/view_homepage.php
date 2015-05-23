@@ -1,7 +1,7 @@
 <!--
  * Name: Emily Van Vlerah
- * Assignment: Week 2 - Project Version 1 (Minimum 2 Features)
- * Date: May 13th, 2015
+ * Assignment: Week 3 - Project Version 1 (Minimum 2 Features)
+ * Date: May 18th, 2015
 -->
 
 <!DOCTYPE html>
@@ -25,8 +25,7 @@
 
             <div id='cssmenu'>
                 <ul>
-                    <li><a href='#'><span>Past Hacks</span></a></li>
-                    <li><a href='#'><span>Community</span></a></li>
+                    <li class='has-sub'><a href='<?php echo base_url(); ?>index.php/site/all_hacks'><span>All Hacks</span></a></li>
                     <li class='active has-sub'><a href='#'><span>User Content</span></a>
                         <ul>
                             <li class='has-sub'><a href='<?php echo base_url(); ?>index.php/site/login'><span>Log In</span></a></li>
@@ -36,8 +35,8 @@
                     </li>
                     <li class='active has-sub'><a href='#'><span>User Content</span></a>
                         <ul>
-                            <li class='has-sub'><a href='#'><span>About Us</span></a></li>
-                            <li class='has-sub'><a href='#'><span>Contact Us</span></a></li>
+                            <li class='has-sub'><a href='<?php echo base_url(); ?>index.php/site/about_us'><span>About Us</span></a></li>
+                            <li class='has-sub'><a href='<?php echo base_url(); ?>index.php/site/contact_us'><span>Contact Us</span></a></li>
                         </ul>
                     </li>
                 </ul>
@@ -49,15 +48,13 @@
 
         <div id="content">
             <h1>Hack of the Day</h1>
-            <p>Lorem ipsum dolor sit amet, ex eum aliquip oblique. Tale affert ridens vel at, ut novum elaboraret deterruisset eam, in debet aliquid scriptorem eum. Ea his elitr maluisset consetetur. Vel an docendi placerat, ex affert munere his.
-
-                Et vix causae mentitum intellegebat, cum id nibh duis, qui ad iisque ocurreret reprehendunt. Viris persecuti ad mea, sumo facilisi consulatu eum an. Placerat consulatu expetendis ius eu. Pro ne oportere praesent.
-
-                Usu ne saepe causae, cu eum liber quando regione, molestie mnesarchum conclusionemque pri eu. Eam ut dolore labitur mentitum, quo nisl accusam dolores cu. In adhuc putent vim. Per at voluptua epicurei. Eam movet patrioque at, mei eros aeque ex. Vocibus consequat has no, ei doming definitiones pri.</p>
+            <h3>Diaper Hack</h3>
+            <p>Cut your time watering your plants. Get a diaper and cut it open getting the absorbent material inside. Add water to said material. Once soaked up add the material to your potting soil of your choice. The material is safe for your plant and the environment.</p>
+            <h5>Admin</h5>
+            <h6>May 23rd, 2015</h6>
 
             <br/>
             <div id="button">
-                <img id="fav" src="<?php echo base_url(); ?>assets/img/fav1.png" alt="fav button">
                 <img id="share" src="<?php echo base_url(); ?>assets/img/share1.png" alt="facebook button">
             </div>
 

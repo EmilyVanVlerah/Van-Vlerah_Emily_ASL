@@ -15,19 +15,16 @@ class Site extends CI_Controller {
     public function homepage()//homepage
     {
         $this->load->view('view_homepage');
-
     }
 
     public function login()//login page
     {
         $this->load->view('view_login');
-
     }
 
     public function register()//sign up page
     {
         $this->load->view('view_register');
-
     }
 
     public function user_profile()//user profile
@@ -89,7 +86,7 @@ class Site extends CI_Controller {
             $this->load->library('email', array('mailtype'=>'html'));
 
             //load model for adding users to DB
-            $this->load->model('model_funtion');
+            $this->load->model('model_function');
 
             //write the email
             $this->email->from('confirm@hackinlife.com', "Hackin' Life");
@@ -135,7 +132,7 @@ class Site extends CI_Controller {
         $this->load->model('model_function');
 
         if ($this->model_function->is_key_valid($key)) {
-            if ($newemail = $this->model_funtion->add_user($key)) {
+            if ($newemail = $this->model_function->add_user($key)) {
 
                 $data = array(
                     'email' => $newemail,
@@ -150,27 +147,37 @@ class Site extends CI_Controller {
 
     }
 
-
-/*
-    public function community_posts()
+    public function about_us()//about page
     {
-        $this->load->view('');
+        $this->load->view('view_about');
     }
 
-    public function past_hacks()
+    public function contact_us()//contact info page
     {
-        $this->load->view('');
+        $this->load->view('view_contact');
     }
 
-    public function user_bookmarks()
+    public function all_hacks()
     {
-        $this->load->view('');
+        /*$data['entries'] = $this->model_function->get_posts(40, 0);*/
+
+        $data['query'] = $this->db->get('entries');
+
+        $this->db->where('entry_id', $this->uri->segment(3));
+
+        $this->load->view('view_community', $data);
     }
 
-    public function user_follow()
-    {
-        $this->load->view('');
+    public function hack_insert(){
+
+        $this->db->insert('entries', $_POST);
+
+        /*$post_title = $this->input->post('title');
+        $post_body = $this->input->post('body');
+        $this->model_function->save_post($post_title, $post_body);*/
+
+
     }
 
-*/
+
 }

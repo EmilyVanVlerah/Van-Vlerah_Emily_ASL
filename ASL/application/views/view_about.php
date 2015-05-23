@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Hackin' Life - User Profile</title>
+    <title>Hackin' Life - About Us</title>
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/main.css"/>
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/styles.css"/>
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/jquery-ui.min.css"/>
@@ -47,33 +47,17 @@
     <div id="body-container">
 
         <div id="content">
-            <h1>Your Profile</h1>
-            <a href="<?php echo base_url().'index.php/site/logout' ?>">Logout</a>
-            <a href='<?php echo base_url(); ?>index.php/site/bookmarks'><span>Bookmarks</span></a>
-            <h3>User Name:</h3>
+            <h1>About Us</h1>
+            <p>Hello and Welcome to Hackin' Life!</p>
+            <p>We are a site that allows people to come and read life hacks. You can become a member and use the bookmark function of our site. You can make posts and they post your own life hacks which will be on your page and the community page. If you find a hack you like you bookmark it and it saves to your bookmark page. You can share your favorite hacks on your facebook as well.</p>
+            <p>Please feel free to register and become part of the community of Hackin' Life.</p>
+            <a href='<?php echo base_url(); ?>index.php/site/register'><span>Register</span></a>
 
-            <?php
-
-                echo "<pre>";
-                print_r($this->session->all_userdata());
-                echo "</pre>";
-
-            ?>
-
-            <div id="posts">
-
-            </div>
-
-
-
-            <br/>
             <br/>
         </div>
     </div>
-
     <div id="footer">
         <p>Copyright &copy; 2015 | Hackin' Life | All rights reserved.</p>
     </div>
 </body>
 </html>
-

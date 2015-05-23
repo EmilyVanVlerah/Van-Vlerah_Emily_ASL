@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Hackin' Life - User Profile</title>
+    <title>Hackin' Life - Contact Us</title>
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/main.css"/>
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/styles.css"/>
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/jquery-ui.min.css"/>
@@ -33,7 +33,7 @@
                         <li class='has-sub'><a href='<?php echo base_url(); ?>index.php/site/user_profile'><span>Profile</span></a></li>
                     </ul>
                 </li>
-                <li class='active has-sub'><a href='#'><span>User Content</span></a>
+                <li class='active has-sub'><a href='#'><span>User Content</span>
                     <ul>
                         <li class='has-sub'><a href='<?php echo base_url(); ?>index.php/site/about_us'><span>About Us</span></a></li>
                         <li class='has-sub'><a href='<?php echo base_url(); ?>index.php/site/contact_us'><span>Contact Us</span></a></li>
@@ -47,33 +47,18 @@
     <div id="body-container">
 
         <div id="content">
-            <h1>Your Profile</h1>
-            <a href="<?php echo base_url().'index.php/site/logout' ?>">Logout</a>
-            <a href='<?php echo base_url(); ?>index.php/site/bookmarks'><span>Bookmarks</span></a>
-            <h3>User Name:</h3>
-
-            <?php
-
-                echo "<pre>";
-                print_r($this->session->all_userdata());
-                echo "</pre>";
-
-            ?>
-
-            <div id="posts">
-
-            </div>
-
-
-
+            <h1>Contact Information</h1>
             <br/>
+            <p>Site Help Phone: 1-800-320-9087</p>
+            <p>Email: help@hackinlife.com</p>
+            <p>Facebook: Hackin' Life</p>
+            <p>Twitter: HackinLife</p>
+
             <br/>
         </div>
     </div>
-
     <div id="footer">
         <p>Copyright &copy; 2015 | Hackin' Life | All rights reserved.</p>
     </div>
 </body>
 </html>
-

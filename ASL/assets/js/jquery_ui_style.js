@@ -58,6 +58,10 @@
         /*------------- Button Functionality --------------------*/
 
 
+        $(function() {
+            $( "#datepicker" ).datepicker();
+        });
+
 
     });
 } )( jQuery );

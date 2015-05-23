@@ -5,9 +5,9 @@
 # http://www.sequelpro.com/
 # http://code.google.com/p/sequel-pro/
 #
-# Host: 127.0.0.1 (MySQL 5.5.34)
+# Host: 127.0.0.1 (MySQL 5.5.42)
 # Database: ASL
-# Generation Time: 2015-05-19 07:17:04 +0000
+# Generation Time: 2015-05-23 07:58:20 +0000
 # ************************************************************
 
 
@@ -20,83 +20,67 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 
-# Dump of table lifeHack
+# Dump of table entries
 # ------------------------------------------------------------
 
-DROP TABLE IF EXISTS `lifeHack`;
+DROP TABLE IF EXISTS `entries`;
 
-CREATE TABLE `lifeHack` (
-  `hackId` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `userId` int(11) DEFAULT NULL,
-  `title` varchar(100) DEFAULT NULL,
-  `content` varchar(500) DEFAULT NULL,
-  PRIMARY KEY (`hackId`),
-  KEY `userID` (`userId`),
-  CONSTRAINT `userID` FOREIGN KEY (`userId`) REFERENCES `user` (`userid`)
+CREATE TABLE `entries` (
+  `entry_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `author` varchar(255) DEFAULT NULL,
+  `date` varchar(255) DEFAULT NULL,
+  `title` varchar(255) DEFAULT NULL,
+  `body` text,
+  PRIMARY KEY (`entry_id`),
+  KEY `userID` (`author`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+LOCK TABLES `entries` WRITE;
+/*!40000 ALTER TABLE `entries` DISABLE KEYS */;
 
-
-# Dump of table status
-# ------------------------------------------------------------
-
-DROP TABLE IF EXISTS `status`;
-
-CREATE TABLE `status` (
-  `statusId` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `status` varchar(20) DEFAULT NULL,
-  PRIMARY KEY (`statusId`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-LOCK TABLES `status` WRITE;
-/*!40000 ALTER TABLE `status` DISABLE KEYS */;
-
-INSERT INTO `status` (`statusId`, `status`)
+INSERT INTO `entries` (`entry_id`, `author`, `date`, `title`, `body`)
 VALUES
-	(1,'unlike'),
-	(2,'like');
+	(1,'Emily','May 22nd, 2015','Oil Stain Hack ','Use coca cola for oil stains on cement or pavement.');
 
-/*!40000 ALTER TABLE `status` ENABLE KEYS */;
+/*!40000 ALTER TABLE `entries` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
-# Dump of table temp_user
+# Dump of table temp_users
 # ------------------------------------------------------------
 
-DROP TABLE IF EXISTS `temp_user`;
+DROP TABLE IF EXISTS `temp_users`;
 
-CREATE TABLE `temp_user` (
+CREATE TABLE `temp_users` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(12) NOT NULL DEFAULT '',
   `email` varchar(255) NOT NULL DEFAULT '',
-  `password` varchar(20) NOT NULL DEFAULT '',
+  `password` varchar(255) NOT NULL,
   `key` varchar(255) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
 
-# Dump of table user
+# Dump of table users
 # ------------------------------------------------------------
 
-DROP TABLE IF EXISTS `user`;
+DROP TABLE IF EXISTS `users`;
 
-CREATE TABLE `user` (
-  `userid` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(12) NOT NULL DEFAULT '',
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `email` varchar(255) CHARACTER SET latin1 NOT NULL DEFAULT '',
   `password` varchar(20) NOT NULL DEFAULT '',
-  PRIMARY KEY (`userid`)
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-LOCK TABLES `user` WRITE;
-/*!40000 ALTER TABLE `user` DISABLE KEYS */;
+LOCK TABLES `users` WRITE;
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
 
-INSERT INTO `user` (`userid`, `username`, `email`, `password`)
+INSERT INTO `users` (`id`, `email`, `password`)
 VALUES
-	(1,'evanvlerah','evanvlerah@fullsail.edu','5f4dcc3b5aa765d61d83');
+	(1,'evanvlerah@fullsail.edu','5f4dcc3b5aa765d61d83');
 
-/*!40000 ALTER TABLE `user` ENABLE KEYS */;
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 
 

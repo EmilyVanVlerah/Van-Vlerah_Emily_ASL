@@ -79,4 +79,24 @@
 
         }
 
+        /*public function get_post($id){
+            $post_query = $this->db->get_where('entries',array('entry_id'=>$id));
+
+            if($post_query->num_rows() > 0){
+                $post_query = $this->db->get_where('entries', array('entry_id'=>$id))->row_array();
+                return $post_query;
+            }else{
+                $this->load->view('view_community');
+            }
+        }
+
+        public function save_post($title, $body){
+            $this->db->insert('entries',
+                array(
+                    'title' =>$title,
+                    'body' =>$body
+                )
+            );
+        }*/
+
     }
