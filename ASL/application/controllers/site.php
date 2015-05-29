@@ -1,10 +1,11 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 /*
+<!--
  * Name: Emily Van Vlerah
- * Assignment: Week 2 - Project Version 1 (Minimum 2 Features)
- * Date: May 13th, 2015
- * */
+ * Assignment: Week 4 - Project Version 3 (2 Additional Features)
+ * Date: May 25th, 2015
+--> */
 class Site extends CI_Controller {
 
     public function index()//homepage
@@ -179,5 +180,34 @@ class Site extends CI_Controller {
 
     }
 
+    public function facebook_request(){
+        $this->load->library('fbconnect');
+
+        $data = array(
+            'redirect_url' => site_url('main/handle_facebook_login'),
+            'scope' => 'email'
+        );
+
+        redirect($this->fbconnect->getLoginUrl($data));
+    }
+
+    public function handle_facebook_login(){
+        $this->load->library('fbconnect');
+        $this->lod->model_function('users');
+        $facebook_user = $this->fbconnect->user;
+
+        if($this->fbconnect->user){
+            $this->users->log_in($facebook_user);
+            redirect('index.php/site');
+
+        }else{
+            $this->users->sign_up_from_facebook($facebook_user);
+            $this->users->log_in($facebook_user);
+            redirect(index.php/site)
+        }else{
+            echo "could not log in at this time.";
+        }
+
+    }
 
 }

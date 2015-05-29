@@ -1,7 +1,7 @@
 <!--
  * Name: Emily Van Vlerah
- * Assignment: Week 2 - Project Version 1 (Minimum 2 Features)
- * Date: May 13th, 2015
+ * Assignment: Week 4 - Project Version 3 (2 Additional Features)
+ * Date: May 25th, 2015
 -->
 
 <?php
@@ -79,24 +79,25 @@
 
         }
 
-        /*public function get_post($id){
-            $post_query = $this->db->get_where('entries',array('entry_id'=>$id));
+        public function log_in($facebook_user)
+        {   $data = array(
+                'is_logged_in' => 1,
+                'email' => $facebook_user['email'],
+                'name' => $facebook_user['name']
+            );
 
-            if($post_query->num_rows() > 0){
-                $post_query = $this->db->get_where('entries', array('entry_id'=>$id))->row_array();
-                return $post_query;
-            }else{
-                $this->load->view('view_community');
-            }
+            $this->session->set_userdata($data);
         }
 
-        public function save_post($title, $body){
-            $this->db->insert('entries',
-                array(
-                    'title' =>$title,
-                    'body' =>$body
-                )
+        public function sign_up_from_facebook($facebook_user){
+            $data = array(
+                'first_name' => $facebook_user['first_name'],
+                'last_name' => $facebook_user['last_name'],
+                'email' => $facebook_user['email'],
+                'facebook_id' => $facebook_user['id']
             );
-        }*/
+
+            $this->db->insert('users', $data);
+        }
 
     }

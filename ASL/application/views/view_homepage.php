@@ -1,7 +1,7 @@
 <!--
  * Name: Emily Van Vlerah
- * Assignment: Week 3 - Project Version 1 (Minimum 2 Features)
- * Date: May 18th, 2015
+ * Assignment: Week 4 - Project Version 3 (2 Additional Features)
+ * Date: May 25th, 2015
 -->
 
 <!DOCTYPE html>
@@ -55,7 +55,7 @@
 
             <br/>
             <div id="button">
-                <img id="share" src="<?php echo base_url(); ?>assets/img/share1.png" alt="facebook button">
+                <a href="<?php echo base_url(). 'site/facebook_request'; ?>" <img id="share" src="<?php echo base_url(); ?>assets/img/share1.png" alt="facebook button"></a>
             </div>
 
             <br/>

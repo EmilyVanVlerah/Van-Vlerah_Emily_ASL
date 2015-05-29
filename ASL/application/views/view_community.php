@@ -1,7 +1,7 @@
 <!--
  * Name: Emily Van Vlerah
- * Assignment: Week 3 - Project Version 1 (Minimum 2 Features)
- * Date: May 18th, 2015
+ * Assignment: Week 4 - Project Version 3 (2 Additional Features)
+ * Date: May 25th, 2015
 -->
 
 <!DOCTYPE html>
@@ -57,8 +57,8 @@
                         <p>Title: <input type="text" name="Title"/></p>
                         <p>Content:</p>
                         <p><textarea name="body" rows="10" cols="50"></textarea></p>
-                        <p>Author: <input type="text" name="Author"/></p>
-                        <p>Date: <input type="text" id="datepicker" name="Date"/></p>
+                        <p>Author: <input type="text" name="author"/></p>
+                        <p>Date: <input type="text" id="datepicker" name="date"/></p>
                         <p><input type="submit" value="Submit Hack" /></p>
 
                         </form>

@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.5.42)
 # Database: ASL
-# Generation Time: 2015-05-23 08:12:59 +0000
+# Generation Time: 2015-05-29 21:07:13 +0000
 # ************************************************************
 
 
@@ -45,6 +45,22 @@ VALUES
 
 /*!40000 ALTER TABLE `entries` ENABLE KEYS */;
 UNLOCK TABLES;
+
+
+# Dump of table fbconnect
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `fbconnect`;
+
+CREATE TABLE `fbconnect` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(255) NOT NULL DEFAULT '',
+  `last_name` varchar(255) NOT NULL DEFAULT '',
+  `facebook_id` int(11) NOT NULL,
+  `email` varchar(255) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 
 # Dump of table temp_users

@@ -1,7 +1,7 @@
 <!--
  * Name: Emily Van Vlerah
- * Assignment: Week 3 - Project Version 1 (Minimum 2 Features)
- * Date: May 18th, 2015
+ * Assignment: Week 4 - Project Version 3 (2 Additional Features)
+ * Date: May 25th, 2015
 -->
 
 <!DOCTYPE html>
